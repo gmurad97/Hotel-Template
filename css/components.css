@@ -1,0 +1,114 @@
+/*BEGIN - LINK*/
+.modern-link {
+    position: relative;
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    color: #ffffff;
+    padding: 8px 32px;
+    transition: background-color 0.2s linear;
+    cursor: pointer;
+}
+
+.modern-link::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 8px;
+    width: 100%;
+    border: 2px solid #d2bd7f;
+    border-bottom: none;
+    transition: height 0.2s linear;
+}
+
+.modern-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 8px;
+    width: 100%;
+    border: 2px solid #d2bd7f;
+    border-top: none;
+    transition: height 0.2s linear;
+}
+
+.modern-link:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modern-link:hover::before,
+.modern-link:hover::after {
+    height: 12px;
+}
+
+/*ENDED - LINK*/
+
+/*BEGIN - TITLE*/
+
+.modern-title {
+    position: relative;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.modern-title::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    width: 100px;
+    height: 50px;
+    border: 2px solid #d2bd7f;
+    border-bottom: none;
+    margin-left: -50px;
+}
+
+.modern-title::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    width: 100px;
+    height: 50px;
+    border: 2px solid #d2bd7f;
+    border-top: none;
+    margin-left: -50px;
+}
+
+.mt-box {
+    position: relative;
+    width: 100%;
+}
+
+.mt-box::before {
+    content: "";
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    width: 90px;
+    height: 45px;
+    border: 1px solid #d2bd7f;
+    border-bottom: none;
+    margin-left: -45px;
+}
+
+.mt-box::after {
+    content: "";
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    width: 90px;
+    height: 45px;
+    border: 1px solid #d2bd7f;
+    border-top: none;
+    margin-left: -45px;
+}
+
+/*ENDED - TITLE*/
