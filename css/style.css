@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --b-bg-color: #222222;
+}
+
+body {
+    background-color: var(--b-bg-color);
+}
+
+.custom-link {
+    position: relative;
+    background-color: transparent;
+    font-family: 'Courier New';
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    color: #ffffff;
+    padding: 8px 32px;
+    transition: background-color 0.2s linear;
+    cursor: pointer;
+}
+
+.custom-link::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 8px;
+    width: 100%;
+    border: 2px solid #d2bd7f;
+    border-bottom: none;
+    transition: height 0.2s linear;
+}
+
+.custom-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 8px;
+    width: 100%;
+    border: 2px solid #d2bd7f;
+    border-top: none;
+    transition: height 0.2s linear;
+}
+
+.custom-link:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.custom-link:hover::before,
+.custom-link:hover::after {
+    height: 12px;
+}
+
+/*dsfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff*/
+
+
+
+
+
+
+
+.custom-title {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.custom-title:before,
+.custom-title:after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    height: 50px;
+    border: 2px solid #d2bd7f;
+}
+
+.custom-title:before {
+    top: -50px;
+    border-bottom: 0;
+}
+
+.custom-title:after {
+    bottom: -50px;
+    border-top: 0;
+}
+
+.ct-box {
+    width: 100%;
+    position: relative;
+}
+
+.ct-box:before,
+.ct-box:after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+    width: 90px;
+    height: 45px;
+    border: 1px solid #d2bd7f;
+}
+
+.ct-box:before {
+    top: -45px;
+    border-bottom: 0;
+}
+
+.ct-box:after {
+    bottom: -45px;
+    border-top: 0;
+}
