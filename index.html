@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Template</title>
     <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <script defer src="js/slider.js"></script>
     <script defer src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -30,15 +32,23 @@
                 <a href="#BookingLink" class="modern-link">Забронировать</a>
             </div>
         </div>
-
-
-        <div class="slider"></div>
-
+        <div class="h-slider">
+            <i class="fa-solid fa-chevron-left fa-chevron-left-pos" onclick="prevSlide();"></i>
+            <div class="hs-images">
+                <img src="img/content/header_slider/1.jpg" alt="Hotel Image #1" class="hs-images-active">
+                <img src="img/content/header_slider/2.jpg" alt="Hotel Image #2">
+                <img src="img/content/header_slider/1.jpg" alt="Hotel Image #1">
+                <img src="img/content/header_slider/2.jpg" alt="Hotel Image #2">
+                <img src="img/content/header_slider/1.jpg" alt="Hotel Image #1">
+                <img src="img/content/header_slider/2.jpg" alt="Hotel Image #2">
+            </div>
+            <i class="fa-solid fa-chevron-right fa-chevron-right-pos" onclick="nextSlide();"></i>
+        </div>
 
 
 
         
-        <div class="bronique"></div>
+        <div class="h-booking"></div>
     </div>
 </body>
 </html>
