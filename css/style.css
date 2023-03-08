@@ -1,4 +1,5 @@
 @import url("components.css");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
 
 *,
 *::before,
@@ -8,10 +9,102 @@
     box-sizing: border-box;
 }
 
-:root {
-    --b-bg-color: #222222;
+body {
+    background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1612929562_60-p-krasnii-fon-s-liniyami-73.jpg");
+    font-family: "Playfair Display";
 }
 
-body {
-    background-color: var(--b-bg-color);
+
+
+/*BEGIN - HEADER SECTION*/
+
+.header {
+    position: relative;
 }
+
+.h-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    padding: 24px 64px;
+}
+
+.hn-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    line-height: 24px;
+}
+
+.hn-logo>span:nth-of-type(1) {
+    font-family: "Monotype Corsiva";
+    font-size: 24px;
+    color: #d2bd7f;
+}
+
+.hn-logo>span:nth-of-type(2) {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.hn-menu>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.hn-menu>ul>li {
+    display: flex;
+}
+
+.hn-menu>ul>li:not(:last-of-type) {
+    margin-right: 12px;
+}
+
+.hn-menu>ul>li>a {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 6px 12px;
+    transition: color 0.3s linear;
+}
+
+.hn-menu>ul>li>a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 2px;
+    width: 0px;
+    background-color: #d2bd7f;
+    transition: width 0.3s linear;
+}
+
+.hn-menu>ul>li>a::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 2px;
+    width: 0px;
+    background-color: #d2bd7f;
+    transition: width 0.3s linear;
+}
+
+.hn-menu>ul>li>a:hover {
+    color: #d2bd7f;
+}
+
+.hn-menu>ul>li>a:hover::before,
+.hn-menu>ul>li>a:hover::after {
+    width: 100%;
+}
+
+/*ENDED - HEADER SECTION*/

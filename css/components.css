@@ -1,4 +1,10 @@
 /*BEGIN - LINK*/
+
+/*
+    <!--USING LINK-->
+    <a href="#URL_HREF_LINK" class="modern-link">THIS LINK</a>
+*/
+
 .modern-link {
     position: relative;
     background-color: transparent;
@@ -50,6 +56,16 @@
 /*ENDED - LINK*/
 
 /*BEGIN - TITLE*/
+
+/*
+    <!--USING TITLE BLOCK-->
+    <div class="modern-title">
+        <div class="mt-box">
+            <div class="mtb-title">BASE TEXT</div>
+            <div class="mtb-subtitle">TEXT</div>
+        </div>
+    </div>
+*/
 
 .modern-title {
     position: relative;
@@ -109,6 +125,17 @@
     border: 1px solid #d2bd7f;
     border-top: none;
     margin-left: -45px;
+}
+
+.mtb-title {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.mtb-subtitle {
+    font-family: "Monotype Corsiva";
+    font-size: 32px;
+    color: #d2bd7f;
 }
 
 /*ENDED - TITLE*/
