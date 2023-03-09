@@ -9,11 +9,30 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Playfair Display";
+::-webkit-scrollbar {
+    width: auto;
 }
 
+::-webkit-scrollbar-track {
+    background-color: #222222;
+}
 
+::-webkit-scrollbar-thumb {
+    background-color: #d2bd7f;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #96875b;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #111111;
+}
+
+body {
+    background-color: #222222;
+    font-family: "Playfair Display";
+}
 
 /*BEGIN - HEADER SECTION*/
 
@@ -49,12 +68,12 @@ body {
 
 .hn-logo>span:nth-of-type(1) {
     font-family: "Monotype Corsiva";
-    font-size: 24px;
+    font-size: 20px;
     color: #d2bd7f;
 }
 
 .hn-logo>span:nth-of-type(2) {
-    font-size: 32px;
+    font-size: 28px;
     color: #ffffff;
 }
 
@@ -71,7 +90,7 @@ body {
 }
 
 .hn-menu>ul>li:not(:last-of-type) {
-    margin-right: 12px;
+    margin-right: 6px;
 }
 
 .hn-menu>ul>li>a {
@@ -133,10 +152,10 @@ body {
 }
 
 .fa-chevron-left-pos {
-
     position: absolute;
     top: 50%;
     left: 32px;
+    transform: translate(-50%, -50%);
     filter: blur(1px);
     font-size: 64px;
     color: #d2bd7f;
@@ -155,6 +174,7 @@ body {
     position: absolute;
     top: 50%;
     right: 32px;
+    transform: translate(-50%, -50%);
     filter: blur(1px);
     font-size: 64px;
     color: #d2bd7f;
@@ -177,6 +197,7 @@ body {
     width: 100%;
     object-fit: cover;
     object-position: center center;
+    filter: brightness(0.7);
     opacity: 0;
     transition: 0.5s;
     z-index: -1;
@@ -187,4 +208,66 @@ body {
     z-index: 1 !important;
 }
 
+.h-booking {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 74px 64px;
+    z-index: 3;
+}
+
 /*ENDED - HEADER SECTION*/
+
+
+.hb-components {
+    display: flex;
+    flex-direction: row;
+}
+
+.hbc-rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+::-webkit-datetime-edit-text {
+    color: #555555
+}
+
+::-webkit-datetime-edit-month-field {
+    color: #555555
+}
+
+::-webkit-datetime-edit-day-field {
+    color: #555555;
+}
+
+::-webkit-datetime-edit-year-field {
+    color: #555555;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-image: url(http://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Calendar-icon.png);
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    color: rgba(204, 204, 204, 0);
+}
+
+.main-container {
+    width: 100%;
+}
+
+.container {
+    padding: 32px 128px;
+}

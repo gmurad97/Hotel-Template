@@ -27,12 +27,12 @@ function prevSlide() {
     images[imagePosition].classList.add("hs-images-active");
 }
 
-let autoPlaySlider = setInterval(nextSlide, 2048);
+let autoPlaySlider = setInterval(nextSlide, 5120);
 
-document.getElementsByClassName("hs-images")[0].onmouseenter = function () {
+document.getElementsByClassName("h-slider")[0].onmouseenter = function () {
     clearInterval(autoPlaySlider);
 }
 
-document.getElementsByClassName("hs-images")[0].onmouseleave = function () {
+document.getElementsByClassName("h-slider")[0].onmouseleave = function () {
     autoPlaySlider = setInterval(nextSlide, 2048);
 }
