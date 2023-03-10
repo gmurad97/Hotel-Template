@@ -50,7 +50,7 @@
 
 .modern-link:hover::before,
 .modern-link:hover::after {
-    height: 12px;
+    height: 40%;
 }
 
 /*ENDED - LINK*/
@@ -70,7 +70,7 @@
 .modern-title {
     position: relative;
     height: auto;
-    width: 100%;
+    width: 30%;
     text-align: center;
 }
 
@@ -140,7 +140,25 @@
 
 /*ENDED - TITLE*/
 
+/*BEGIN - INPUT*/
 
+input[type="date"]{
+    outline: none;
+    border: 2px solid #d2bd7f;
+    padding: 16px 50px;
+    background-color: transparent;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
 
+select{
+    outline: none;
+    border: 2px solid #d2bd7f;
+    padding: 16px 50px;
+    background-color: transparent;
+    font-size: 16px;
 
+}
 
+/*ENDED - INPUT*/
