@@ -34,5 +34,5 @@ document.getElementsByClassName("h-slider")[0].onmouseenter = function () {
 }
 
 document.getElementsByClassName("h-slider")[0].onmouseleave = function () {
-    autoPlaySlider = setInterval(nextSlide, 2048);
+    autoPlaySlider = setInterval(nextSlide, 5120);
 }
